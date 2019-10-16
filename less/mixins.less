@@ -1,0 +1,27 @@
+// Mixins Here
+
+.displayflex (@direction, @justify, @align) {
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: @direction; 
+  justify-content: @justify; 
+  align-items: @align;
+}
+
+.button (@color, @bg-color, @pix, @radius){ 
+  text-align: center;
+  color: @color;
+  background-color: @bg-color;
+  padding: @pix;
+  border-radius: @radius;
+}
+
+.hover {
+  animation-name: example;
+  animation-duration: 1s;
+
+  @keyframes example {
+    from {background-color: @button-bg}
+    to {background-color: green;}
+  }
+}
