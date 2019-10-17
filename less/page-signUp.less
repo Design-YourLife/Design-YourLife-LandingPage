@@ -1,0 +1,89 @@
+.main-content {
+  // border: 2px solid red;
+  margin: 10%;
+  margin-bottom: 15%;
+
+  margin-top: 250px;
+  
+  @media @phone {
+    margin-top: 118px;
+  }
+
+  .intro {
+    // border: 2px solid blue; 
+    .displayflex(row, center, center);
+
+    .intro-box {
+      // border: 2px solid blue; 
+      text-align: center;
+      width: 100%;
+      height: auto;
+      padding: 60px;
+    }
+  }
+  
+  .boxed-content{
+    margin: 0% 5% 0% 5%;
+    // border: 2px solid blue;
+
+    p{
+      padding: 10px;
+    }
+
+    .row1, .row2, .row3 {
+
+    .displayflex(row, space-around, center);
+
+    } 
+    .row3 { 
+      justify-content: flex-start;
+      margin: 0% 4% 0% 4%;
+    }
+    .row1 .box {
+      // border: 2px solid lightgray;
+      background-color: @blue_gray_level3;
+      width: 40%;
+      height: auto;
+      padding: 2rem;
+      padding-left: 10px;
+      margin: 3% 0% 3% 0%;
+
+      &:hover {
+        .contact-hover();
+      }
+    }
+    
+    .row2 .box {
+      // border: 2px solid lightgray;
+      background-color: @blue_gray_level3;
+      width: 90%;
+      height: auto;
+      padding: 2rem;
+      padding-left: 10px;
+      margin: 3% 0% 3% 0%;
+      &:hover {
+        .contact-hover();
+      }
+    }
+    
+    .row3 {
+      // border: 2px solid blue;
+      justify-content: space-between;
+      padding: 2.5rem;
+
+      .btn {
+        // .button(white, @button-bg3, 15px, 5px);
+      }
+      .btn:hover {
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background: @blue_level1;
+        color: white;
+      }
+    }
+
+  }
+
+
+}
+
