@@ -4,14 +4,6 @@
   background: @nav-bg;
   font-family: 'Noto Sans', sans-serif;
   padding: 0.7%;
-  // position: fixed; 
-  // top: 0;
-  
-  // .logo {
-  //   border: 2px solid green;
-  //   width: 100%;
-  //   margin-right: 20%;
-  // }
 }
 
 .user, .logo, .menu {
@@ -22,13 +14,28 @@
 .user{
   .avatar .female_avatar{
     // border: 2px solid orange;
-    padding: 20px;
+    padding: 10px;
     width: 100px;
     height: 100px;
     background-size: cover;
   }
   p {
     font-size: 170%;
+  }
+  p:hover{
+    color: @blue_level1;
+  }
+  @media @tablet {
+    .avatar .female_avatar{
+      // border: 2px solid orange;
+      width: 80px;
+      height: 80px;
+      background-size: cover;
+    }
+
+    p {
+      display: none;
+    }
   }
 }
 
@@ -45,7 +52,19 @@
   p {
     font-size: 200%;
   }
-  // box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 6, 0.30);
+  
+  @media @tablet {
+    .icon .logo_icon{
+      // padding: 3px;
+      width: 50px;
+      height: 50px;
+      margin: 4%;
+      background-size: cover;
+    }
+    p {
+      font-size: 100%;
+    }
+  }
 }
 
 .menu{
@@ -53,5 +72,16 @@
     color: white;
     padding: 30px;
     font-size: 200%;
+  }
+
+  a:hover{
+    color: @blue_level1;
+  }
+
+  @media @tablet {
+    text-align: center;
+    .team-link {
+      display: none;
+    }
   }
 }
