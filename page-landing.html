@@ -20,14 +20,17 @@
 
  <!-- banner container -->
  <div class="container_banner">
+
    <!-- navigation -->
    <div class="nav">
-      <a href="page-signUp.html">
-        <div class="user">
+      <div class="user">
           <div class = "avatar"><img class="female_avatar" src="img/nav/female_avatar1.png" alt="female_avatar"></div>
-          <p>login / register</p>
-        </div>
-      </a>
+          <a href="#"><p>login</p></a> 
+          <br>
+          <p>/</p> 
+          <br>
+          <a href="#"><p>register</p></a>
+      </div>
 
      <a href="page-landing.html">
         <div class="logo">
@@ -46,19 +49,42 @@
    </div>
    <!-- navigation END-->
 
+   <!-- ========================================================= -->
+
    <!-- call to action content -->
    <div class="home_banner_content">
      <div class="header"><h1>Life is what you make it /</h1></div>
     <div class="subheader"><h3>Our goal is to help you figure out which activities bring you enjoyment, energy and engagement.</h3></div>
     <br>
     <br>
-    <div class="btn"><p>get started</p> </div>
+    <div class="btn" id="btn_started"><p>get started</p> </div>
+
+    <!-- Modal -->
+      <div class="bg-modal">
+          <div class="modal-content">
+            <div class="close">+</div>
+          
+            <div class="container_1 content">
+                <div class="header"><h2>design your dream life /</h2></div>
+              <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+            </div>
+            
+            <div class="container_2 btn_box">
+              <div class="btn">login</div>
+              <div class="btn">redister</div>
+            </div>
+          </div>
+        </div>
+      <!-- Modal END -->
+
    </div>
    <!-- call to action content END-->
+
  </div>
  <!-- banner container END-->
 
 
+<!-- ========================================================= -->
 <!-- ========================================================= -->
 
  <!-- body container -->
@@ -124,21 +150,22 @@
    </div>
     
  </div>
-<!-- body container END-->
+<!-- body container END -->
 
 
+<!-- ========================================================= -->
 <!-- ========================================================= -->
 
 
 <!-- footer container -->
 <div class="container_footer">
+
   <div class="logo">
     <div class = "footer-icon"><img class="logo_icon" src="img/nav/n-logo.png" alt="n logo"></div>
     <div class = "space"> <p></p> </div>
     <p>life/note</p>
   </div>
 
-  <!-- <div class="copyright">&copy; design your life 2019</div> -->
   <div class="footer-nav">
     <a href="page-landing.html">home</a>
     <a href="page-activity-list.html">activity-list</a>
@@ -147,8 +174,13 @@
     <a href="page-team.html">meet the team</a>
     <a href="page-signUp.html">sign up</a>
   </div>
+
 </div>
-<!-- footer container END-->
- 
+<!-- footer container END -->
+
+
+ <!-- modal -->
+ <script src="modal.js"></script>
+
 </body>
 </html>
