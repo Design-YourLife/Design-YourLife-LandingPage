@@ -17,12 +17,33 @@ h1, h2, h3, h4, h5 {
   color: @header-font-color;
 }
 
+h1 {
+  font-size: 10rem;
+  padding: 20px;
+}
+
 h2 {
   font-size: 3.2rem;
 }
 
 h3 {
   font-size: 2.8rem;
+  color: white;
+}
+
+@media @phone {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+
+header {
+  font-size: 2.8rem;
+  color: @dark_gray_level1;
 }
 
 a {
@@ -32,20 +53,33 @@ a {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.4;
+  letter-spacing: 2px;
 }
 
 .container {
-  max-width: 800px;
+  // max-width: 800px;
   width: 100%;
   margin: 0 auto;  
 }
 
 .btn {
-  font-size: 1.6rem;
-  line-height: 1.4;
+  font-size: 3rem;
+  line-height: 3;
   width: auto;
+  padding: 5px 40px 5px 40px;
+  border-radius: 10px;
+  background: @button-bg1;
+  color: @button-bg2;
+  p{
+    font-size: 2.2rem;
+  } 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.space {
+  padding: 3%;
 }
 
 @media @phone {

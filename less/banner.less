@@ -1,0 +1,110 @@
+.container_banner {
+  // border: 2px solid red;
+  background: @banner-background1;
+}
+
+.home_banner_content {
+  // border: 2px solid blue;
+  .displayflex(column, center, center);
+  background-image: url("../img/banner/img_2.jpg");
+  opacity: 0.9;
+  width: 100%;
+  height: 1350px;
+
+  @media @phone {
+    height: 900px;
+  }
+
+  h1{
+    margin: 5% 0% 2% 0%;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 40px;
+  }
+  .btn {
+    margin: 5% 0% 0% 0%;
+    
+  }
+  .btn:hover {
+    cursor: pointer;
+    background: @button-bg3;
+    color: white;
+  }
+
+  .bg-modal {
+    width: 100%;
+    height: 1350px;
+    background: rgba(0, 0, 0, 0.6); 
+    position: absolute; 
+    // top: 0;
+    .displayflex(row, center, center);
+    display: none;
+  
+
+    .modal-content {
+      .displayflex(row, center, center);
+      width: 50%;
+      height: auto;
+      padding: 3%;
+      background: white;
+      border-radius: 5px;
+      text-align: center;
+      position: relative;
+
+      .container_1 {
+        padding: 4%;
+      }
+    
+      .container_2 {
+        .displayflex(row, space-evenly, center);
+        width: 100%;
+        .btn {
+          width: 30%;
+      
+        }
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 0;
+      right: 14px;
+      font-size: 42px;
+      transform: rotate(45deg);
+      cursor: pointer;
+    }
+
+    @media @phone {
+      height: 900px;
+    }
+  }
+  
+  
+}
+
+@media @laptop-1400 {
+  .home_banner_content {
+    padding: 5%;
+
+    h1{
+      font-size: 8rem;
+    }
+
+    .btn {
+      font-size: 2rem;
+      line-height: 2;
+      width: auto;
+      padding: 2px 30px 2px 30px;
+      border-radius: 10px;
+      background: @button-bg1;
+      color: @button-bg2;
+      p{
+        font-size: 2.2rem;
+      } 
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+  }
+}

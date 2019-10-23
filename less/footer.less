@@ -1,0 +1,38 @@
+
+.container_footer {
+  .displayflex(row, space-between, center);
+  background: @nav-bg;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0.7%;
+
+  .footer-nav {
+    a {
+      color: white;
+      padding: 30px;
+      font-size: 200%;
+    }
+    a:hover{
+      color: #ED934D;
+    }
+    @media @tablet {
+      display: none;
+    }
+    @media @laptop-1060 {
+      display: none;
+    }
+  }
+
+  .footer-icon{
+    .displayflex(row, center, center);
+    color: white;
+    .logo_icon{
+      // border: 2px solid orange;
+      padding: 5px;
+      width: 80px;
+      height: 80px;
+      margin: 4%;
+      background-size: cover;
+    }
+    
+  }
+}

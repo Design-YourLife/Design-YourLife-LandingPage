@@ -1,0 +1,91 @@
+.nav{
+  // border: 2px solid blue;
+  .displayflex(row, space-between, center);
+  background: @nav-bg;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0.7%;
+}
+
+.user, .logo, .menu {
+  // border: 2px solid red;
+  .displayflex(row, center, center);
+  color: white;
+}
+.user{
+  .avatar .female_avatar{
+    // border: 2px solid orange;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+  }
+  a {
+    color: white;
+  }
+  p {
+    font-size: 170%;
+    margin: 0 10px 0 0;
+  }
+  p:hover{
+    color: @blue_level1;
+  }
+  @media @tablet {
+    .avatar .female_avatar{
+      // border: 2px solid orange;
+      width: 80px;
+      height: 80px;
+      background-size: cover;
+    }
+
+    p {
+      display: none;
+    }
+  }
+}
+
+.logo{
+  // border: 2px solid orange;
+  .icon .logo_icon{
+    // padding: 3px;
+    width: 90px;
+    height: 90px;
+    margin: 4%;
+    background-size: cover;
+  }
+
+  p {
+    font-size: 200%;
+  }
+  
+  @media @tablet {
+    .icon .logo_icon{
+      // padding: 3px;
+      width: 50px;
+      height: 50px;
+      margin: 4%;
+      background-size: cover;
+    }
+    p {
+      font-size: 100%;
+    }
+  }
+}
+
+.menu{
+  a {
+    color: white;
+    padding: 30px;
+    font-size: 200%;
+  }
+
+  a:hover{
+    color: @blue_level1;
+  }
+
+  @media @tablet {
+    text-align: center;
+    .team-link {
+      display: none;
+    }
+  }
+}
