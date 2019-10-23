@@ -1,7 +1,8 @@
+// border: 4px solid blue;
+
 .container_header_1 {
   .displayflex(row, center, stretch);
   width: 100%;
-  // border: 4px solid blue;
   padding: 2%;
   box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 6, 0.30);
   .header{
@@ -10,22 +11,18 @@
 }
 
 .container_box_1.activity {
-  // border: 2px solid blue;
   .displayflex(row, center, stretch);
 
   .box-block {
-    // border: 2px solid red;
     width: 33.33%;
     height: 500px;
     .displayflex(column, center, stretch);
   }
 
   .box-block.text {
-    // border: 2px solid orange;
     text-align: center;
     height: auto;
     padding: 50px;
-    // box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 6, 0.30);
 
     .btn {
       font-size: 1.8rem; 
@@ -33,15 +30,12 @@
   }
 
   .box img {
-    // border: 2px solid green;
     width: 70%; 
     height: 70%; 
     padding: 20px;
-    // margin: 15% 0% 15% 0%;
   }
 
   .box-button {
-    // border: 2px solid orange;
     .btn:hover {
     cursor: pointer;
     background: @button-bg3;
@@ -51,7 +45,6 @@
 
   .box-block.text:hover {
     background: @blue_gray_level5;
-    // border: 3px solid @dark_gray_level1;
     box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 6, 0.30);
   }
 
@@ -67,11 +60,9 @@
 
 @media @laptop-1400 {
   .container_box_1.activity {
-    // border: 2px solid blue;
     .displayflex(column, center, center);
 
     .box-block {
-      // border: 5px solid @dark_gray_level1;
       width: 90%;
       height: 300px;
       margin: 4%;
@@ -79,11 +70,9 @@
     }
 
     .box img {
-      // border: 2px solid green;
       width: 40%; 
       height: 40%; 
       padding: 20px;
-      // margin: 15% 0% 15% 0%;
     }
   }
 }
@@ -92,13 +81,12 @@
   .displayflex(row, center, stretch);
 
   .box-block.about {
-    // border: 2px solid orange;
+    width: 100%;
     background: @dark_gray_level1;
     color: white;
     text-align: center;
     height: auto;
     padding: 100px 50px 100px 50px;
-    // box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 6, 0.30);
 
     p{
       padding: 0 100px 0 100px;
@@ -118,13 +106,10 @@
   }
 
   .box-block.about-img {
-    // background-image: url("../img/pages/home/img_1.jpg");
-    background-image: url("https://www.chicago.gov/content/dam/city/depts/dca/Millennium%20Park/mp_slideshow/mpslideshowsummer20191.gif");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.9;
     background-position: center; 
-    // background-size: 100% auto;
     width: 100%;
     height: 900px;
 
