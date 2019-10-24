@@ -24,11 +24,11 @@
    <div class="nav">
       <div class="user">
           <div class = "avatar"><img class="female_avatar" src="img/nav/female_avatar1.png" alt="female_avatar"></div>
-          <a href="#"><p>login</p></a> 
-          <br>
+          <a href="#"><p>login / register</p></a> 
+          <!-- <br>
           <p>/</p> 
           <br>
-          <a href="#"><p>register</p></a>     
+          <a href="#"><p>register</p></a> -->
       </div>
 
      <a href="index.html">
@@ -39,14 +39,31 @@
       </a>
 
      <div class="menu">
-       <div class="menu-link">
-           <a class="team-link" href="page-team.html">meet the team</a>
-       </div>
-       <a href="page-team.html"><div class="menu-icon"><img class="menu_icon" src="img/nav/menu.png" alt="menu icon"></div></a>
+
+       <div id="menu-icon" class="menu_off"><img class="menu_icon" src="img/nav/menu.png" alt="menu icon"></div>
+
+       <div id="menu-icon2" class="menu_on" style="display: none;"><img class="menu_icon" src="img/nav/menu.png" alt="menu icon"></div>
        
      </div>
+
    </div>
    <!-- navigation END-->
+
+   <!-- Menu Modal -->
+   <div class="menu-modal">
+
+      <div class="footer-nav">
+          <a href="index.html">home</a>
+          <a href="page-team.html">meet the team</a>
+          <a href="#">activity-list</a>
+          <a href="#">activity-log</a>
+          <a href="#">journal</a>
+          <a href="#">login</a>
+          <a href="#">register</a>
+      </div>
+        
+    </div>
+    <!-- Menu Modal END -->
 
    <!-- call to action content -->
    <div class="banner_content">
@@ -176,14 +193,17 @@
   <!-- <div class="copyright">&copy; design your life 2019</div> -->
   <div class="footer-nav">
     <a href="index.html">home</a>
-    <a href="page-activity-list.html">activity-list</a>
-    <a href="page-activity-log.html">activity-log</a>
-    <a href="page-journal.html">journal</a>
     <a href="page-team.html">meet the team</a>
-    <a href="page-signUp.html">sign up</a>
+    <a href="#">activity-list</a>
+    <a href="#">activity-log</a>
+    <a href="#">journal</a>
+    <a href="#">sign up</a>
   </div>
 </div>
 <!-- footer container END-->
+
+<!-- modal -->
+<script src="modal.js"></script>
  
 </body>
 </html>
