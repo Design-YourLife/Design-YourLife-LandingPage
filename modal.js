@@ -1,3 +1,5 @@
+// call to action get started modal
+
 document.getElementById('btn_started').addEventListener('click', function() {
   document.querySelector('.bg-modal').style.display = 'flex';
 });
@@ -6,7 +8,9 @@ document.querySelector('.close').addEventListener('click', function() {
   document.querySelector('.bg-modal').style.display = 'none';
 });
 
-/////////////////////////////////////////
+
+
+// navigation menu drop down home page 
 
 document.getElementById('menu-icon').addEventListener('click', function() {
   document.querySelector('.menu-modal').style.display = 'flex';

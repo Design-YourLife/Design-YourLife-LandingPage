@@ -435,11 +435,22 @@ p {
 .menu-modal .footer-nav a:hover {
   color: #ED934D;
 }
-@media (max-width: 900px) {
-}
 @media (max-width: 700px) {
   .menu-modal {
     width: 70%;
+  }
+}
+@media (max-width: 1060px) {
+  #login,
+  #register {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  #a-list,
+  #a-log,
+  #journal {
+    display: none;
   }
 }
 .user,

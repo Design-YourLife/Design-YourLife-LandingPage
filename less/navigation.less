@@ -28,16 +28,25 @@
       a:hover{
         color: #ED934D;
       }
-      @media @tablet {
-        // .displayflex(column, space-evenly, center);
-        // height: 500px;
-      }
     }
 
       @media @phone {
         width: 70%;
       }
     }
+
+    @media @laptop-1060 {
+      #login, #register {
+        display: none;
+      }
+    }
+    @media @tablet {
+  
+      #a-list, #a-log, #journal {
+        display: none;
+      }
+    }
+
 
 .user, .logo, .menu {
   // border: 2px solid red;
