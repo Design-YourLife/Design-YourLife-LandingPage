@@ -24,11 +24,11 @@
    <div class="nav">
       <div class="user">
           <div class = "avatar"><img class="female_avatar" src="img/nav/female_avatar1.png" alt="female_avatar"></div>
-          <a href="#"><p>login</p></a> 
+          <a href="https://design-your-life.now.sh/login"><p>login</p></a> 
           <br>
           <p>/</p> 
           <br>
-          <a href="#"><p>register</p></a>     
+          <a href="https://design-your-life.now.sh/register"><p>register</p></a>
       </div>
 
      <a href="index.html">
@@ -39,14 +39,31 @@
       </a>
 
      <div class="menu">
-       <div class="menu-link">
-           <a class="team-link" href="page-team.html">meet the team</a>
-       </div>
-       <a href="page-team.html"><div class="menu-icon"><img class="menu_icon" src="img/nav/menu.png" alt="menu icon"></div></a>
+
+       <div id="menu-icon-team1" class="menu_off"><img class="menu_icon" src="img/nav/menu.png" alt="menu icon"></div>
+
+       <div id="menu-icon-team2" class="menu_on" style="display: none;"><img class="menu_icon" src="img/nav/menu.png" alt="menu icon"></div>
        
      </div>
+
    </div>
    <!-- navigation END-->
+
+   <!-- Menu Modal -->
+   <div class="menu-modal">
+
+      <div class="footer-nav">
+          <a href="index.html">home</a>
+          <a href="page-team.html">meet the team</a>
+          <a href="#" id="a-list">activity-list</a>
+          <a href="#" id="a-log">activity-log</a>
+          <a href="#" id="journal">journal</a>
+          <a href="https://design-your-life.now.sh/login" id="login">login</a>
+          <a href="https://design-your-life.now.sh/register" id="register">register</a>
+      </div>
+        
+    </div>
+    <!-- Menu Modal END -->
 
    <!-- call to action content -->
    <div class="banner_content">
@@ -80,7 +97,7 @@
      <div class="container_box_3 team">
         <div class="box-block team-about-img"></div>
        <div class="box-block about-us">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>Something incredible happens when teamwork happens the way it's supposed to happen. Things change when everyone on the team is equally invested in the overall purpose and goal. You find yourself working faster, finding mistakes more easily, and innovating better.</p>
        </div>
      </div>
 
@@ -175,15 +192,15 @@
 
   <!-- <div class="copyright">&copy; design your life 2019</div> -->
   <div class="footer-nav">
-    <a href="index.html">home</a>
-    <a href="page-activity-list.html">activity-list</a>
-    <a href="page-activity-log.html">activity-log</a>
-    <a href="page-journal.html">journal</a>
-    <a href="page-team.html">meet the team</a>
-    <a href="page-signUp.html">sign up</a>
+      <a href="index.html">home</a>
+      <a href="page-team.html">meet the team</a>
+      <a href=https://design-your-life.now.sh/login>sign up</a>
   </div>
 </div>
 <!-- footer container END-->
+
+<!-- modal -->
+<script src="modal-team.js"></script>
  
 </body>
 </html>

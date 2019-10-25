@@ -3,8 +3,50 @@
   .displayflex(row, space-between, center);
   background: @nav-bg;
   font-family: 'Noto Sans', sans-serif;
-  padding: 0.7%;
-}
+  padding: 0.7%;  
+  }
+
+  .menu-modal {
+    width: 100%;
+    height: 100px;
+    // background: blue; 
+    position: relative; 
+    top: 0;
+    display: none;
+    
+    .footer-nav {
+      .displayflex(row, space-evenly, center);
+      width: 100%;
+      height: auto;
+      a {
+        .displayflex(row, space-evenly, center);
+        // border: 2px solid blue;
+        color: white;
+        padding: 30px;
+        font-size: 200%;
+      }
+      a:hover{
+        color: #ED934D;
+      }
+    }
+
+      @media @phone {
+        width: 70%;
+      }
+    }
+
+    @media @laptop-1060 {
+      #login, #register {
+        display: none;
+      }
+    }
+    @media @tablet {
+  
+      #a-list, #a-log, #journal {
+        display: none;
+      }
+    }
+
 
 .user, .logo, .menu {
   // border: 2px solid red;
@@ -44,6 +86,7 @@
 }
 
 .logo{
+  padding-right: 50px;
   // border: 2px solid orange;
   .icon .logo_icon{
     // padding: 3px;
@@ -72,6 +115,8 @@
 }
 
 .menu{
+  // border: 2px solid blue;
+  padding-right: 3%;
   a {
     color: white;
     padding: 30px;
